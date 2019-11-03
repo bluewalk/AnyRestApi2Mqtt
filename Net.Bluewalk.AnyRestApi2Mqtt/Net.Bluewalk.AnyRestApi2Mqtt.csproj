@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Flurl.Http" Version="2.4.2" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.0" />
+      <PackageReference Include="MQTTnet.Extensions.ManagedClient" Version="3.0.8" />
+      <PackageReference Include="Net.Bluewalk.DotNetUtils" Version="2019.9.26.1" />
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+      <PackageReference Include="Polly" Version="7.1.1" />
+      <PackageReference Include="YamlDotNet" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="config.yml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
