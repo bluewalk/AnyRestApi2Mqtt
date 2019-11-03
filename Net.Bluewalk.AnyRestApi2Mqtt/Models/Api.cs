@@ -19,7 +19,7 @@ namespace Net.Bluewalk.AnyRestApi2Mqtt.Models
         public List<string> OnStart { get; set; }
 
         [YamlIgnore]
-        public string AuthFile => Path.Combine(Directory.GetCurrentDirectory(), $"{Name}.auth");
+        public string AuthFile => Path.Combine(Directory.GetCurrentDirectory(), "tokens", Name);
         
         public void SetAuthToken(string token)
         {

@@ -44,6 +44,7 @@ namespace Net.Bluewalk.AnyRestApi2Mqtt
             _hostEnvironment = hostEnvironment;
             
             var fileName = Path.Combine(_hostEnvironment.ContentRootPath, "config.yml");
+            Directory.CreateDirectory(Path.Combine(_hostEnvironment.ContentRootPath, "tokens"));
 
             if (!File.Exists(fileName))
                 throw new FileNotFoundException("Config file not found", fileName);
